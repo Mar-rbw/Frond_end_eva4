@@ -12,7 +12,7 @@ export const Header = () => {
             <Link to={"/Colaboradores"}>Colaboradores</Link>
             <Link to={"/Preguntas frecuentes"}>Faq</Link>
             <Link to={"/Contactanos"}>Contactanos</Link>
-            <Link to={"/Redes sociales"}>Redes Sociales</Link>
+            <Link to={"/Recuerda"}>Recuerda</Link>
         </nav>
     )
 }

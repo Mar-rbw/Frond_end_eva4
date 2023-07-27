@@ -1,8 +1,4 @@
 import React from 'react';
-import twitter from "public/svg/cdnlogo.com_twitter-icon.svg";
-import instagram from "public/svg/cdnlogo.com_instagram.svg";
-import youtube from "public/svg/cdnlogo.com_youtube-icon.svg";
-
 
 export const Footer = () => {
     return (
@@ -13,21 +9,21 @@ export const Footer = () => {
             {/* Apartado de instagram */}
             <div>
                 <a href="https://www.instagram.com/gimnasiosenergy/">
-                <img src={instagram} alt='Instagram_logo'/><br/>
+                <img src="../img/twitter_logo.png" alt='Instagram'/><br/>
                 <p>Siguenos en Instragram</p>
                 </a>
             </div>
             {/* Apartado de Youtube */}
             <div>
                 <a href="https://www.youtube.com/energygimnasios">
-                <img src={youtube} alt='Youtube_logo'/><br/>
+                <img src="../img/Youtube_logo.png" alt='Youtube_logo'/><br/>
                 <p>Siguenos en Youtube</p>
                 </a>
             </div>
             {/* Apartado de Twitter */}
             <div>
-                <a href="https://twitter.com/gimnasiosenergy?lang=es">
-                <img src={twitter} alt='Twitter_logo'/><br/>
+                <a href="https://twitter.com/GimnasiosEnergy">
+                <img src="../img/twitter_logo.png" alt='Twitter_logo'/><br/>
                 <p>Siguenos en Twitter</p>
                 </a>
             </div>

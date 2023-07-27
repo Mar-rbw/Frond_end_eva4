@@ -1,3 +1,4 @@
+'use client'
 import { Main } from 'next/document'
 import Image from 'next/image'
 import {BrowserRouter} from 'react-router-dom'
