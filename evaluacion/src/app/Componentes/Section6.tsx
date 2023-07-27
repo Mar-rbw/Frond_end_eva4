@@ -76,16 +76,16 @@ export const Contactanos = () => {
                                 <label >Teléfono</label><br />
                                 <input type="phone" placeholder="+56912345678"/>
                             </div><br />
-                            <select className="bt">
+                            <select >
                                 <option selected>Asunto</option>
-                                <option value="1">Copiapo</option>
-                                <option value="2">Caldera</option>
-                                <option value="3">Tierra Amarilla</option>
+                                <option value="1">Comentario</option>
+                                <option value="2">Reportar error</option>
+                                <option value="3">Reclamo</option>
                                 <option value="4">Otros</option>
-                            </select><br />      
-                            <div >
+                            </select>    
+                            <div ><br />
                                 <label >Contenido</label><br />
-                                <textarea name="contenido" id="si" cols={30} rows={10} className="bt"></textarea>
+                                <textarea name="contenido" id="si" cols={30} rows={10}></textarea>
                             </div>
                             <button type="submit"  >Enviar</button>
                     </form>
