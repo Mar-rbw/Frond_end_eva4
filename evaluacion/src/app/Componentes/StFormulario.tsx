@@ -46,10 +46,36 @@ export const StFormulario = () => {
               value={apellido}
               /><br/>
             <label>Género: </label><br/>
-            <input type="number"
+{/*             <input type="number"
               onChange={(e)=>setGenero(e.target.value)}
-              value={genero}
-              /><br/>
+              value={genero} */}
+            <div>
+              <input
+                type="radio"
+                value="Hombre"
+                checked={genero === "Hombre"}
+                onChange={(e) => setGenero(e.target.value)}
+              />
+              <label>Hombre</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="Mujer"
+                checked={genero === "Mujer"}
+                onChange={(e) => setGenero(e.target.value)}
+              />
+              <label>Mujer</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="Otro"
+                checked={genero === "Otro"}
+                onChange={(e) => setGenero(e.target.value)}
+              />
+              <label>Otro</label>
+            </div>
             <label>Dirección: </label><br/>
             <input type="text"
               onChange={(e)=>setDireccion(e.target.value)}
@@ -61,15 +87,37 @@ export const StFormulario = () => {
               value={numero}
               /><br/>
             <label>Region: </label><br/>
-            <input type="text"
-              onChange={(e)=>setRegion(e.target.value)}
-              value={region}
-              /><br/>
+            <div>
+              <select
+                onChange={(e) => setRegion(e.target.value)}
+                value={region}
+              >
+                <option value="" disabled selected>
+                  Región
+                </option>
+                <option value="Tarapaca">Tarapaca</option>
+                <option value="Antofagasta">Antofagasta</option>
+                <option value="Atacama">Atacama</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>
+            <br/>
             <label>Comuna: </label><br/>
-            <input type="number"
-              onChange={(e)=>setComuna(e.target.value)}
-              value={comuna}
-              /><br/>
+            <div>
+              <select
+                onChange={(e) => setComuna(e.target.value)}
+                value={comuna}
+              >
+                <option value="" disabled selected>
+                  Comuna
+                </option>
+                <option value="Copiapo">Copiapo</option>
+                <option value="Caldera">Caldera</option>
+                <option value="Tierra Amarilla">Tierra Amarilla</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>
+            <br/>
             <label>Correo: </label><br/>
             <input type="email"
               onChange={(e)=>setCorreo(e.target.value)}
@@ -81,10 +129,21 @@ export const StFormulario = () => {
               value={telefono}
               /><br/>
             <label>Asunto: </label><br/>
-            <input type="text"
-              onChange={(e)=>setAsunto(e.target.value)}
-              value={asunto}
-              /><br/>
+            <div>
+              <select
+                onChange={(e) => setAsunto(e.target.value)}
+                value={asunto}
+              >
+                <option value="" disabled selected>
+                  Asunto
+                </option>
+                <option value="Comentario">Comentario</option>
+                <option value="Reportar error">Reportar error</option>
+                <option value="Reclamo">Reclamo</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>
+            <br/>
             <label>Contenido: </label><br/>
             <input type="text"
               onChange={(e)=>setContenido(e.target.value)}

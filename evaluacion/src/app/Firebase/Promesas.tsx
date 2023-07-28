@@ -11,7 +11,7 @@ export const registrarFormulario = async(f:Formulario)=>{
 }
 /* querySnapshot recupera datos que concidan con los criterios especificados */
 /* método data( Este método devuelve un objeto representa los campos y sus valores almacenados en el documento */
-export const obtenerPersonas = async()=>{
+export const obtenerFormularios= async()=>{
     const querySnapshot = await getDocs(collection(db, "formulario"));
     console.log(querySnapshot)
     var formulario:Formulario[] = []
