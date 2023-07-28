@@ -145,8 +145,10 @@ export const StFormulario = () => {
             </div>
             <br/>
             <label>Contenido: </label><br/>
-            <input type="text"
-              onChange={(e)=>setContenido(e.target.value)}
+            <textarea
+              rows={5}
+              cols={30}
+              onChange={(e) => setContenido(e.target.value)}
               value={contenido}
               /><br/>
 

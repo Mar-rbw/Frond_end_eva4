@@ -21,8 +21,6 @@ export const AppRouter = () => {
             <Route path="/Preguntas frecuentes" element={<Faq/>}/>
             <Route path="/Contactanos" element={<Contactanos/>}/>
             <Route path="/Recuerda" element={<Recuerda/>}/>
-          
-
         </Routes>
       )
     }
