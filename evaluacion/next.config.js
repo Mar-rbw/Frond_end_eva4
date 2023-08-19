@@ -10,7 +10,7 @@ const nextConfig = {
     },
     devServer: {
       open: true,
-    },
+    }
   };
   
   module.exports = nextConfig;
